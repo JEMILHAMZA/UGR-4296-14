@@ -13,12 +13,15 @@
 </head>
 
 <body>
-  <!-- start header -->
-  <header class="header">
-    <div class="container">
+ <!-- start header -->
+ <header class="header">
+  <div class="header__container">
+    <div class="header__container__logo">
       <img src="images/logo.png" alt="website-logo" id="logo">
+    </div>
+    <div class="header__container__navigation">
       <nav>
-        <ul class="nav-links">
+        <ul class="header__container__navigation__links">
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
           <li><a href="education.html" class="nav-link">Education</a></li>
@@ -27,39 +30,44 @@
         </ul>
       </nav>
     </div>
-  </header>
-  <!-- end header -->
-
+   
+  </div>
+</header>
+<!-- end header -->
   <!-- start about content -->
 
 <article>
     <div class="paragraphs" >
-        <h2 class="topic"> <strong>ABOUT</strong></h2>
+        <h2 class="paragraphs__topic"> <strong>ABOUT</strong></h2>
         <p>I'm an undergraduate Software Engineering student at Addis Ababa Institute of Technology based in Ethiopia. I'm very passionate and dedicated to my studies. I have achieved a lot of awards and certifications during my high school years. With a few years of experience as a software student, I have acquired the skills necessary to build great, appealing, and premium websites that meet the latest web standards.</p>
         <p class="paragraph-gap"> I am skilled at quickly learning new processes, technologies, and machinery. I am self-motivated with strong organizational and time management abilities. Most importantly, I am constantly trying to learn new skills to improve myself and my educational level.</p>
   
     </div>
   
   <div class="profile">
-    <div class="profile-img"><img src="images/jemil.jpg" alt="photo" ></div>
+    <div class="profile__img"><img src="images/jemil.jpg" alt="photo" ></div>
     
-    <div class="profile-details">
+    <div class="profile__details">
       <h2>UNDERGRADUATE SOFTWARE ENGINEERING STUDENT</h2>
       <blockquote class="quote">
         <p>"Everyone should learn how to program a computer because it teaches you how to think." - Steve Jobs</p>
       </blockquote>
       <p><em>From a young age, I have been fascinated by the power of technology and its ability to shape the world we live in. This fascination led me to explore the field of software engineering, where I discovered a limitless realm of creativity, problem-solving, and innovation. Through my studies and personal projects, I have gained a solid foundation in programming languages, algorithms, and software development methodologies.</em></p>
-      <ul class="arrow-list">
-        <li><strong>My Name:</strong> Jemil Shikuri</li>
-        <li><strong>Education Level:</strong> Undergraduate</li>
-        <li><strong>Phone:</strong> +251 935 657 526</li>
-        <li><strong>City:</strong> Addis Ababa, Ethiopia</li>
-      </ul>
-      <ul class="arrow-list">
-        <li><strong>Age:</strong> 20</li>
-        <li><strong>Quick Learner:</strong> Yes</li>
-        <li><strong>Email:</strong> jemil.shikuri@aait.edu.et</li>
-      </ul>
+      <div class="profile__details__arrow">
+        <ul class="profile__details__arrow__list">
+          <li><strong>My Name:</strong> Jemil Shikuri</li>
+          <li><strong>Education Level:</strong> Undergraduate</li>
+          <li><strong>Phone:</strong> +251 935 657 526</li>
+          <li><strong>City:</strong> Addis Ababa, Ethiopia</li>
+        </ul>
+        <ul class="profile__details__arrow__list">
+          <li><strong>Age:</strong> 20</li>
+          <li><strong>Quick Learner:</strong> Yes</li>
+          <li><strong>Email:</strong> jemil.shikuri@aait.edu.et</li>
+        </ul>
+      </div>
+      
+      
       <p>Moreover, I firmly believe in the power of computer science to drive positive change in society. I am committed to leveraging my skills and knowledge to contribute to groundbreaking innovations and address real-world challenges.</p>
     </div>
   </div>
@@ -71,10 +79,13 @@
 
 
   <!-- start footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 JEMIL SHIKURI. ALL RIGHTS RESERVED</p>
-      <div class="social-icons">
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__container__copy-right">
+        <p>&copy; 2023 JEMIL SHIKURI. ALL RIGHTS RESERVED</p>
+      </div>
+      
+      <div class="footer__container__social-icons">
         <a href="https://www.instagram.com/jemil.sh/" class="social-link"><img src="images/instagram2.png"
               alt="instagram" class="social-icon"></a>
         <a href="https://twitter.com/jemil_shikuri77" class="social-link"><img src="images/twitter2.png" alt="twitter"
