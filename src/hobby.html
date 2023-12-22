@@ -2,172 +2,147 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby</title>
-    <link rel="icon" href="favicon.ico/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jemil Shikuri Personal Site</title>
+  <link rel="icon" href="favicon.ico/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+ 
+  <link href="dist/output.css" rel="stylesheet">
+
+  
 </head>
 
-<body>
-    <!-- start header  -->
-    <header>
-        <table>
-            <tr>
-                <td style="width: 20%;">
-                    <img src="images/logo.png" alt="website-logo" width="75" height="75">
-                </td>
-                <td style="width: 6%;">
+<body class="pt-28 ">
+
+  
+  <!-- start header -->
+  <header class="bg-white flex items-center  fixed top-0 left-0 w-full z-50 p-5 shadow">
+    
+    <div class="flex md:justify-between items-center">
+      <img src="images/logo.png" alt="website-logo" id="logo" class="w-20 h-20 ml-14 mr-64 rounded-full">
+      
+      <nav class="">
+        <div class=" px-4 cursor-pointer md:pl-32 lg:hidden" id="burger">
+            <svg class="w-14 h-14" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </div>
+        <div class="">
+            <ul class="hidden  lg:hidden" id="menu">
+                <li><a href="index.html" class="hover:text-sky-200 ">Home</a></li>
+                <li><a href="about.html" class="hover:text-sky-200">About</a></li>
+                <li><a href="education.html" class="hover:text-sky-200">Education</a></li>
+                <li><a href="hobby.html" class="hover:text-sky-200">Hobby</a></li>
+                <li><a href="contact.html" class="hover:text-sky-200">Contact</a></li>
+            </ul>
+          <ul class=" hidden lg:flex gap-20 text-3xl italic decoration-double text-zinc-600 " >
+            <li><a href="index.html" class="hover:text-sky-200 ">Home</a></li>
+            <li><a href="about.html" class="hover:text-sky-200">About</a></li>
+            <li><a href="education.html" class="hover:text-sky-200">Education</a></li>
+            <li><a href="hobby.html" class="hover:text-sky-200">Hobby</a></li>
+            <li><a href="contact.html" class="hover:text-sky-200">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header -->
+
+  <article class="bg-gray-100 font-sans text-gray-700 px-5 py-6 flex flex-col items-center">
+    <div class="">
+        <h2 class="text-2xl font-semibold text-indigo-900 border-b-4 border-gray-600 w-12 pb-4">HOBBIES</h2>
+        <p class="text-lg mt-7 mb-14">My diverse range of hobbies, including coding, fitness, football, involvement in my school community club, photography, and reading fiction, provide me with opportunities for personal growth, self-expression, and the pursuit of my passions. Each hobby allows me to explore different aspects of my interests, challenge myself, and find fulfillment in various dimensions of my life.</p>
+    </div>
+
+    <div class=" lg:flex-col">
+
+        <div class=" lg:flex justify-between ">
+            <div class=" bg-white p-8 mb-8 rounded-lg w-96 h-auto flex flex-col items-center">
+                <img class="w-16 h-16 " src="images/coding2.png" alt="">
+                <h3 class="text-xl pt-4"><strong>Programming</strong></h3>
+                <p class="text-lg pt-7 ">One of my greatest passions is coding, where I immerse myself in the world of programming languages and software development. Through coding, I can bring ideas to life, solve complex problems, and create innovative solutions. It provides me with a sense of accomplishment and fuels my desire to continuously expand my technical skills.</p>
+                <video class="w-96 h-48 mx-auto my-10" src="images/stack-over.mp4" controls autoplay loop>Your browser does not support the video tag.</video>
+            </div>
+
+            <div class=" bg-white p-8 mb-8 rounded-lg w-96 h-auto flex flex-col items-center">
+                <img class="w-16 h-16" src="images/football2.png" alt="">
+                <h3 class="text-xl pt-4"><strong>Football</strong></h3>
+                <p class="text-lg pt-7 ">Football has always held a special place in my heart. The thrill of the game, teamwork, and the pursuit of victory make it an exhilarating hobby. Being part of a football team not only hones my athletic abilities but also fosters camaraderie and teaches me valuable lessons in collaboration, leadership, and resilience.</p>
+                <video class="w-96 h-48 mx-auto my-10" src="images/idol.mp4" controls autoplay loop>Your browser does not support the video tag.</video>
+            </div>
+
+            <div class="bg-white p-8 mb-8 rounded-lg w-96 h-auto flex flex-col items-center">
+                <img class="w-16 h-16" src="images/bodybuilding2.png" alt="">
+                <h3 class="text-xl pt-4"><strong>Physical Fitness</strong></h3>
+                <p class="text-lg pt-7 ">I am a dedicated fitness enthusiast. Engaging in physical activities and maintaining a healthy lifestyle is essential to me. Whether it's hitting the gym, going for a run, or practicing yoga, fitness allows me to stay active, relieve stress, and maintain overall well-being. The discipline and perseverance required in fitness mirror the same qualities I apply in other areas of my life.</p>
+                <video class="w-96 h-48 mx-auto my-10" src="images/body-building.mp4" controls autoplay loop>Your browser does not support the video tag.</video>
+            </div>
+        </div>
+
+        <div class=" lg:flex gap-20 ">
+            <div class="bg-white p-8 mb-8 rounded-lg w-96 h-auto flex flex-col items-center ">
+                <img class="w-16 h-16" src="images/fiction2.png" alt="">
+                <h3 class="text-xl pt-4 "><strong>Fiction Reading</strong></h3>
+                <p class="text-lg pt-7 ">I find solace and inspiration in the world of fiction through reading. Immersing myself in the pages of a captivating novel allows me to escape reality, explore different worlds, and gain new insights. Reading fiction broadens my imagination, enhances my critical thinking skills, and transports me to realms of endless possibilities.</p>
+                <audio class="mx-auto my-5" src="images/The-Secret.mp3" controls autoplay loop>Your browser does not support the audio tag.</audio>
+            </div>
+
+            <div class=" bg-white p-8 mb-8 rounded-lg w-96 h-auto flex flex-col items-center">
+                <img class="w-16 h-16" src="images/camera2.png" alt="">
+                <h3 class="text-xl pt-4"><strong>Photography</strong></h3>
+                <p class="text-lg pt-7 ">Photography is yet another passion that allows me to capture fleeting moments and tell stories through visual imagery. Whether it's nature, portraits, or capturing candid moments, photography enables me to express my creativity and share my unique perspective with others. It is a hobby that constantly challenges me to see the world from different angles and appreciate the beauty in everyday life.</p>
+                <div class=" grid gap-4 mt-3 ">
+                    <a href="images/photos.jpg" class="text-lg bg-gray-200 px-4 py-3    text-gray-700   border border-black rounded-full transition duration-300 hover:bg-sky-200 pl-11">View Picture Sample 1 👁</a>
+                    <a href="images/photos2.jpg" class="text-lg bg-gray-200 px-4 py-3    text-gray-700   border border-black rounded-full transition duration-300 hover:bg-sky-200 w-48 pl-9 ">Sample 2 👁</a>
+                    <a href="images/photos3.jpg" class="text-lg bg-gray-200 px-4 py-3    text-gray-700   border border-black rounded-full transition duration-300 hover:bg-sky-200 w-48 pl-9">Sample 3 👁</a>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 mb-8 rounded-lg w-96 h-auto flex flex-col items-center">
+                <img class="w-16 h-16" src="images/club2.png" alt="">
+                <h3 class="text-xl pt-4"><strong>Community Involvement</strong></h3>
+                <p class="text-lg pt-7 ">Contributing to my school community club is an important part of my life. By actively participating in various community service initiatives, I can make a positive impact on the lives of others and create a sense of belonging within my school. It also allows me to develop leadership skills, foster empathy, and cultivate a spirit of giving back to society.</p>
+                <div class="grid gap-4 mt-3">
+                    <a href="images/tech.jpg" class="text-lg bg-gray-200 px-4 py-3    text-gray-700   border border-black rounded-full transition duration-300 hover:bg-sky-200 pl-11">Tech Club Certificate 👁</a>
+                    <a href="images/charity.jpg" class="text-lg bg-gray-200 px-4 py-3    text-gray-700   border border-black rounded-full transition duration-300 hover:bg-sky-200 pl-11">Charity Club Certificate 👁</a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</article>
 
 
+  <!-- start footer -->
+  <footer class="bg-black text-white text-center py-4">
+    <div class="flex flex-col items-center lg:flex-row  justify-between  px-5 ">
+      <p class="text-lg ml-18">© 2023 JEMIL SHIKURI. ALL RIGHTS RESERVED</p>
+      <div class="flex gap-4 mr-5">
+        <a href="https://www.instagram.com/jemil.sh/" ><img src="images/instagram2.png" alt="instagram" class="w-14 h-14 border-white border-4  mr-4 bg-white rounded-full hover:bg-sky-200"></a>
+        <a href="https://twitter.com/jemil_shikuri77" ><img src="images/twitter2.png" alt="twitter" class="w-14 h-14 border-white border-4 mr-4 bg-white rounded-full hover:bg-sky-200"></a>
+        <a href="https://www.facebook.com/jemil.elrayan" ><img src="images/facebook2.png" alt="facebook" class="w-14 h-14 border-white border-4 mr-4 bg-white rounded-full hover:bg-sky-200"></a>
+      
+        <a href="https://www.linkedin.com/in/jemil-elrayan/" ><img src="images/linkedin2.png" alt="linkedin" class="w-14 h-14 border-white border-4 mr-4 bg-white rounded-full hover:bg-sky-200"></a>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <script>
+    const burger = document.querySelector('#burger');
+    const menu = document.querySelector('#menu');
 
-                <td style="width: 7%;"><a href="index.html" target="_blank">
-                        <h1> Home </h1>
-                    </a></td>
-                <td style="width: 7%;"> <a href="about.html" target="_blank">
-                        <h1>About </h1>
-                    </a></td>
-                <td style="width: 7%;"><a href="education.html" target="_blank">
-                        <h1>Education </h1>
-                    </a></td>
-                <td style="width: 7%;"><a href="hobby.html" target="_blank">
-                        <h1>Hobby </h1>
-                    </a></td>
-                <td style="width: 7%;"><a href="contact.html" target="_blank">
-                        <h1>Contact </h1>
-                    </a>
-            </tr>
-        </table>
-    </header>
-    <!-- end header -->
-
-    <!-- start hobby content -->
-    <hr>
-    <article>
-        <h2> MY HOBBIES</h2>
-        <p>My diverse range of hobbies, including coding, fitness, football, involvement in my school community club,
-            photography, and reading fiction, provide me with opportunities for personal growth, self-expression, and
-            the pursuit of my passions. Each hobby allows me to explore different aspects of my interests, challenge
-            myself, and find fulfillment in various dimensions of my life.</p>
-        <table>
-            <tr>
-                <td>
-                    <img src="images/programming.png" alt="" width="125" height="125">
-                    <p><strong>programming</strong></p>
-                    <p>One of my greatest passions is coding, where I immerse myself in the world of programming
-                        languages and software development. Through coding, I can bring ideas to life, solve complex
-                        problems, and create innovative solutions. It provides me with a sense of accomplishment and
-                        fuels my desire to continuously expand my technical skills.</p>
-                    <video src="images/stack-over.mp4" width="400" height="200" controls autoplay loop>
-                        Your browser does not support the video tag.
-                    </video>
-                </td>
-                <td>
-                    <img src="images/ball.png" alt="" width="125" height="125">
-                    <p><strong>foot ball</strong></p>
-                    <p>Football has always held a special place in my heart. The thrill of the game, teamwork, and the
-                        pursuit of victory make it an exhilarating hobby. Being part of a football team not only hones
-                        my athletic abilities but also fosters camaraderie and teaches me valuable lessons in
-                        collaboration, leadership, and resilience.</p>
-                    <video src="images/idol.mp4" width="400" height="200" controls autoplay loop>
-                        Your browser does not support the video tag.
-                    </video>
-                </td>
-                <td>
-                    <img src="images/gym.png" alt="" width="125" height="125">
-                    <p><strong>physical fitness</strong></p>
-                    <p>I am a dedicated fitness enthusiast. Engaging in physical activities and maintaining a healthy
-                        lifestyle is essential to me. Whether it's hitting the gym, going for a run, or practicing yoga,
-                        fitness allows me to stay active, relieve stress, and maintain overall well-being. The
-                        discipline and perseverance required in fitness mirror the same qualities I apply in other areas
-                        of my life.</p>
-                    <video src="images/body-building.mp4" width="400" height="200" controls autoplay loop>
-                        Your browser does not support the video tag.
-                    </video>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="images/book.png" alt="" width="125" height="125">
-                    <p><strong>fiction reading</strong></p>
-                    <p>I find solace and inspiration in the world of fiction through reading. Immersing myself in the
-                        pages of a captivating novel allows me to escape reality, explore different worlds, and gain new
-                        insights. Reading fiction broadens my imagination, enhances my critical thinking skills, and
-                        transports me to realms of endless possibilities.</p>
-                    <audio src="images/The-Secret.mp3" controls autoplay loop>
-                        Your browser does not support the audio tag.
-                    </audio>
-                </td>
-                <td>
-                    <img src="images/camera.png" alt="" width="125" height="125">
-                    <p><strong>photography</strong></p>
-                    <p>Photography is yet another passion that allows me to capture fleeting moments and tell stories
-                        through visual imagery. Whether it's nature, portraits, or capturing candid moments, photography
-                        enables me to express my creativity and share my unique perspective with others. It is a hobby
-                        that constantly challenges me to see the world from different angles and appreciate the beauty
-                        in everyday life.</p>
-                    <a href="images/photos.jpg">View picture sample 1 👁</a>
-                    <a href="images/photos2.jpg">sample 2 👁</a>
-                    <a href="images/photos3.jpg">sample 3 👁</a>
-                </td>
-
-                <td>
-                    <img src="images/school-club.png" alt="" width="125" height="125">
-                    <p><strong>school club</strong></p>
-                    <p>I have a deep sense of connection and dedication to my school and its community. Engaging in
-                        various activities and initiatives within the club allows me to contribute to the betterment of
-                        the school environment, foster a sense of unity, and create positive change. It provides me with
-                        a platform to develop leadership skills, organize events, and work collaboratively with fellow
-                        students towards common goals.</p>
-                    <a href="images/charity.jpg">charity club certificate 👁</a>
-                    <a href="images/tech.jpg">tech club certificate 👁</a>
-                </td>
-
-            </tr>
-        </table>
-    </article>
-    <!-- end hobby content -->
-
-    <!-- start footer -->
-    <hr>
-    <footer>
-        <table>
-            <tr>
-                <td style="width: 30%;">
-                    <p>&copy; 2023 JEMIL SHIKURI. ALL RIGHTS RESERVED</p>
-                </td>
+    burger.addEventListener('click', (e) => {
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+  </script>
 
 
-                <td style="width: 5%;">
-                    <img src="images/instagram.png" alt="instagram" width="50" height="50">
-                    <a href="https://www.instagram.com/jemil.sh/">
-                        <p>instagram</p>
-                    </a>
-                </td>
-                <td style="width: 5%;">
-                    <img src="images/twitter.png" alt="twitter" width="50" height="50">
-                    <a href="https://twitter.com/jemil_shikuri77">
-                        <p>twitter</p>
-                    </a>
-                </td>
-                <td style="width: 5%;">
-                    <img src="images/facebook.png" alt="facebook" width="50" height="50">
-                    <a href="https://www.facebook.com/jemil.elrayan">
-                        <p>facebook</p>
-                    </a>
-                </td>
-                <td style="width: 5%;">
-                    <img src="images/linkedin.png" alt="linkedin" width="50" height="50">
-                    <a href="https://linkedin.com/in/jemil-hamza-60a6aa2831">
-                        <p>linkedin</p>
-                    </a>
-                </td>
-
-            </tr>
-        </table>
-    </footer>
-
-
-    <!-- end footer -->
 </body>
 
 </html>

@@ -1,114 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="icon" href="favicon.ico/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jemil Shikuri Personal Site</title>
+  <link rel="icon" href="favicon.ico/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+ 
+  <link href="dist/output.css" rel="stylesheet">
+
+  
 </head>
-<body>
-     
-       <!-- start header  -->
-     <header>
-        <table>
-            <tr>
-                <td style="width: 20%;">
-                    <img src="images/logo.png" alt="website-logo" width="75" height="75">
-                </td>
-                
-                   
-                    <td style="width: 7%;"><a href="index.html" target="_blank"><h1> Home </h1></a></td>
-                    <td style="width: 7%;"> <a href="about.html" target="_blank"><h1>About </h1></a></td>
-                    <td style="width: 7%;"><a href="education.html" target="_blank"><h1>Education </h1></a></td>
-                    <td style="width: 7%;"><a href="hobby.html" target="_blank"><h1>Hobby </h1></a></td>
-                    <td style="width: 7%;"><a href="contact.html" target="_blank"><h1>Contact </h1></a></td>
-                
-            </tr>
-        </table>
-    </header>
-    <!-- end header -->
 
-        <!-- start Home content -->
-        <hr>
-       <article>
-            <h2>ABOUT US</h2>
-            <P>I'm under-graduate Software Engineering student at Addis Ababa Institute of Technology based in Ethiopia. I'm very passionate and dedicated to my study.I achieved a lot of awards and certifications during my high school study. With few years experience as a software student, I have acquired the skills necessary to build great, appealing, and premium websites that meet the latest web standards. </p> 
-            <p> Working with others, Skilled at quickly learning new processes, technologies, and machinery. Self-motivated with strong organizational and time management abilities. Most importantly, I'm constantly trying to learn new skills to improve myself and my education level.</P>
-            <table>
-                <tr>
-                    <td>
-                        <img src="images/photo.png" alt="photo" width="350" height="400" style="border-radius: 50%;">
-                    </td>
-                    <td>
-                        <h2>UNDER GRADUATE SOFTWARE ENGINEERING STUDENT</h2>
-            <p>From a young age, I have been fascinated by the power of technology and its ability to shape the world we live in. This fascination led me to explore the field of software engineering, where I discovered a limitless realm of creativity, problem-solving, and innovation. Through my studies and personal projects, I have gained a solid foundation in programming languages, algorithms, and software development methodologies.</p>
-            <ul>
-                <li> <strong>My Name:</strong> Jemil Shikuri</li>
-                <li> <strong>Education-level:</strong> under graduate</li>
-                <li> <strong>Phone:</strong> +251 935 657 526</li>
-                <li> <strong>City:</strong> Addis Ababa, Ethiopia</li>
+<body class="pt-28 ">
+
+  
+  <!-- start header -->
+  <header class="bg-white flex items-center  fixed top-0 left-0 w-full z-50 p-5 shadow">
+    
+    <div class="flex md:justify-between items-center">
+      <img src="images/logo.png" alt="website-logo" id="logo" class="w-20 h-20 ml-14 mr-64 rounded-full">
+      
+      <nav class="">
+        <div class=" px-4 cursor-pointer  lg:hidden" id="burger">
+            <svg class="w-14 h-14" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </div>
+        <div class="">
+            <ul class="hidden  lg:hidden" id="menu">
+                <li><a href="index.html" class="hover:text-sky-200 ">Home</a></li>
+                <li><a href="about.html" class="hover:text-sky-200">About</a></li>
+                <li><a href="education.html" class="hover:text-sky-200">Education</a></li>
+                <li><a href="hobby.html" class="hover:text-sky-200">Hobby</a></li>
+                <li><a href="contact.html" class="hover:text-sky-200">Contact</a></li>
+            </ul>
+          <ul class=" hidden lg:flex gap-20 text-3xl italic decoration-double text-zinc-600 " >
+            <li><a href="index.html" class="hover:text-sky-200">Home</a></li>
+            <li><a href="about.html" class="hover:text-sky-200">About</a></li>
+            <li><a href="education.html" class="hover:text-sky-200">Education</a></li>
+            <li><a href="hobby.html" class="hover:text-sky-200">Hobby</a></li>
+            <li><a href="contact.html" class="hover:text-sky-200">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- end header -->
+
+<!-- start about content -->
+  <article class="bg-gray-100 font-sans text-gray-700">
+    <div class="px-4 py-6">
+        <h2 class="text-2xl font-semibold text-indigo-900 border-b-4 border-gray-600 w-12 pb-4">ABOUT</h2>
+        <p class=" text-lg mt-5">I'm an undergraduate Software Engineering student at Addis Ababa Institute of Technology based in Ethiopia. I'm very passionate and dedicated to my studies. I have achieved a lot of awards and certifications during my high school years. With a few years of experience as a software student, I have acquired the skills necessary to build great, appealing, and premium websites that meet the latest web standards.</p>
+        <p class="text-lg mt-4">I am skilled at quickly learning new processes, technologies, and machinery. I am self-motivated with strong organizational and time management abilities. Most importantly, I am constantly trying to learn new skills to improve myself and my educational level.</p>
+    </div>
+  
+    <div class="mx-5 lg:flex">
+        <div class="self-center bg-white py-4 px-5 rounded-3xl md:w-96">
+            <img src="images/jemil.jpg" alt="photo" class="w-96 h-96 rounded-full  mr-96 ml-3 self-center">
+        </div>
+    
+        <div class="flex flex-col ml-5 mt-5">
+            <h2 class="self-center mb-5 text-2xl font-semibold text-indigo-900">UNDERGRADUATE SOFTWARE ENGINEERING STUDENT</h2>
+            <blockquote class=" self-center italic text-lg text-gray-700 border-l-4 border-gray-600 pl-4 mb-5">
+                <p>"Everyone should learn how to program a computer because it teaches you how to think." - Steve Jobs</p>
+            </blockquote>
+            <p class="text-lg mb-5"><em>From a young age, I have been fascinated by the power of technology and its ability to shape the world we live in. This fascination led me to explore the field of software engineering, where I discovered a limitless realm of creativity, problem-solving, and innovation. Through my studies and personal projects, I have gained a solid foundation in programming languages, algorithms, and software development methodologies.</em></p>
+            <div class=" mb-6 lg:flex gap-24">
+              
+                <ul class="mr-12 ">
+                  <li class=" text-lg mb-3"><strong>My Name:</strong> Jemil Shikuri</li>
+                  <li  class="text-lg mb-3"><strong>Education Level:</strong> Undergraduate</li>
+                  <li  class="text-lg mb-3"><strong>Phone:</strong> +251 935 657 526</li>
+                  <li  class="text-lg mb-3"><strong>City:</strong> Addis Ababa, Ethiopia</li>
               </ul>
-          
-        
-              <ul>
-                <li> <strong>Age:</strong> 20</li>
-                <li><strong>Quick Learner:</strong> Ofcourse, yes</li>
-                <li> <strong>Email:</strong> jemil.shikuri@aait.edu.et</li>
-                
-              </ul>
-                    </td>
-                </tr>
-            </table>
-               
+             
             
-
-              <p>Moreover, I firmly believe in the power of computer science to drive positive change in society. I am committed to leveraging my skills and knowledge to contribute to groundbreaking innovations and address real-world challenges.</p>
-        
-        </article>
-        <!-- end Home content -->
-       
-
-<!-- start footer -->
-<hr>
-<footer>
-    <table>
-        <tr>
-            <td style="width: 30%;">
-                <p>&copy; 2023 JEMIL SHIKURI. ALL RIGHTS RESERVED</p>
-            </td>
-
-
-            <td style="width: 5%;">
-                <img src="images/instagram.png" alt="instagram" width="50" height="50">
-                <a href="https://www.instagram.com/jemil.sh/">
-                    <p>instagram</p>
-                </a>
-            </td>
-            <td style="width: 5%;">
-                <img src="images/twitter.png" alt="twitter" width="50" height="50">
-                <a href="https://twitter.com/jemil_shikuri77">
-                    <p>twitter</p>
-                </a>
-            </td>
-            <td style="width: 5%;">
-                <img src="images/facebook.png" alt="facebook" width="50" height="50">
-                <a href="https://www.facebook.com/jemil.elrayan">
-                    <p>facebook</p>
-                </a>
-            </td>
-            <td style="width: 5%;">
-                <img src="images/linkedin.png" alt="linkedin" width="50" height="50">
-                <a href="https://linkedin.com/in/jemil-hamza-60a6aa2831">
-                    <p>linkedin</p>
-                </a>
-            </td>
-
-        </tr>
-    </table>
-</footer>
+                <ul>
+                  <li  class="text-lg mb-3"><strong>Age:/strong> 20</li>
+                  <li  class="text-lg mb-3"><strong>Quick Learner:</strong> Yes</li>
+                  <li  class="text-lg"><strong>Email:</strong> jemil.shikuri@aait.edu.et</li>
+              </ul>
+            
+                
+               
+            </div>
+      
+            <p class="text-lg mb-5">Moreover, I firmly believe in the power of computer science to drive positive change in society. I am committed to leveraging my skills and knowledge to contribute to groundbreaking innovations and address real-world challenges.</p>
+        </div>
+    </div>
+</article>
+<!-- end about content -->
 
 
-<!-- end footer -->
-     
+   <!-- start footer -->
+  <footer class="bg-black text-white text-center py-4">
+    <div class="flex flex-col  lg:flex-row items-center justify-between  px-5 ">
+      <p class="text-lg ml-18">© 2023 JEMIL SHIKURI. ALL RIGHTS RESERVED</p>
+      <div class="flex gap-4 mr-5">
+        <a href="https://www.instagram.com/jemil.sh/" ><img src="images/instagram2.png" alt="instagram" class="w-14 h-14 border-white border-4  mr-4 bg-white rounded-full hover:bg-sky-200"></a>
+        <a href="https://twitter.com/jemil_shikuri77" ><img src="images/twitter2.png" alt="twitter" class="w-14 h-14 border-white border-4 mr-4 bg-white rounded-full hover:bg-sky-200"></a>
+        <a href="https://www.facebook.com/jemil.elrayan" ><img src="images/facebook2.png" alt="facebook" class="w-14 h-14 border-white border-4 mr-4 bg-white rounded-full hover:bg-sky-200"></a>
+      
+        <a href="https://www.linkedin.com/in/jemil-elrayan/" ><img src="images/linkedin2.png" alt="linkedin" class="w-14 h-14 border-white border-4 mr-4 bg-white rounded-full hover:bg-sky-200"></a>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <script>
+    const burger = document.querySelector('#burger');
+    const menu = document.querySelector('#menu');
+
+    burger.addEventListener('click', (e) => {
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+  </script>
+
 </body>
+
 </html>
